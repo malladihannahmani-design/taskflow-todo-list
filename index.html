@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="bg-circle one"></div>
+    <div class="bg-circle two"></div>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/9068/9068670.png" alt="todo image">
+            <h1>Task Manager</h1>
+            <p>
+                Organize your daily work, manage tasks,
+                and increase productivity with a beautiful To-Do App.
+            </p>
+        </div>
+        <div class="todo-section">
+            <h2>My To-Do List</h2>
+            <div class="input-box">
+                <input type="text" id="taskInput" placeholder="Enter your task...">
+                <button id="addBtn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <div class="task-info">
+                <span id="taskCount">0 Tasks</span>
+            </div>
+            <!-- TASK LIST -->
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <!-- JS LINK -->
+    <script src="script.js"></script>
+</body>
+</html>
